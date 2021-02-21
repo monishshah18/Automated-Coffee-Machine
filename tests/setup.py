@@ -9,7 +9,7 @@ from coffee_machine.stock import Stock
 from coffee_machine.beverage import Beverage
 
 
-test_input_config = json.load(open("./test.json", "r"))
+test_input_config = json.load(open("test.json", "r"))
 beverages = test_input_config["machine"]["beverages"]
 beverage_ingredients = beverages.values()
 
