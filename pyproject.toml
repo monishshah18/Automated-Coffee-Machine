@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "Automated-Coffee-Machine"
+version = "0.0.0"
+description = "A Dynamic Coffee Machine"
+authors = ["Monish Shah <monishshah16@gmail.com>"]
+
+classifiers = [
+        "Framework :: Pytest",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3.7",
+        "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pytest = ">5.4.0, <6.1"
+lovely-pytest-docker = { version="^0", optional = true }
