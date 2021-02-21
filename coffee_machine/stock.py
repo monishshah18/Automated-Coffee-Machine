@@ -49,7 +49,7 @@ class Stock:
 
     def use_ingredients(self, ingredients_needed: Dict) -> List[str]:
         """Check availability of ingredients present in the machine to make beverage.
-        Use up the ingrdients if all are available.
+        Use up the ingredients if all are available.
         Checking the ingredient stock is thread safe.
         So, if ingredients are not available for beverage,
         then it will return the list of such ingredients.

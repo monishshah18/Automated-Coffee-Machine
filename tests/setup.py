@@ -1,6 +1,5 @@
 import os
 import sys
-import logging
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import json
@@ -8,10 +7,9 @@ import pytest
 
 from coffee_machine.stock import Stock
 from coffee_machine.beverage import Beverage
-logger = logging.getLogger('')
-logger.info(str(sys.path))
 
-test_input_config = json.load(open("./test.json", "r"))
+
+test_input_config = json.load(open(os.path.join(os.path.dirname(__file__),"test.json"), "r"))
 beverages = test_input_config["machine"]["beverages"]
 beverage_ingredients = beverages.values()
 
